@@ -18,7 +18,7 @@ export default function LouRobot() {
 };
 const [input, setInput] = useState("");
 const [selectedPrompt, setSelectedPrompt] = useState("");
-
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 
   const handleRobotClick = () => {
@@ -36,7 +36,7 @@ const [selectedPrompt, setSelectedPrompt] = useState("");
   setIsListening(true);
 
   try {
-    const res = await fetch("https://johnshaj-portfolio-5.onrender.com/chat", {
+    const res = await fetch(`${API_BASE_URL}/chat`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
