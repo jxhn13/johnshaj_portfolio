@@ -3,7 +3,8 @@ flask-cors
 gunicorn
 PyMuPDF==1.23.6
 
-# Qdrant client
+# Qdrant Python client
 qdrant-client==1.6.3
-qdrant
-cohere
+
+# Cohere SDK
+cohere==4.48
