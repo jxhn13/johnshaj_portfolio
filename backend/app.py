@@ -12,3 +12,4 @@ def create_app():
     app.register_blueprint(contact_bp)
     return app
     
+app = create_app() 
