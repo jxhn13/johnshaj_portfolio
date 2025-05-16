@@ -19,7 +19,6 @@ export default function LouRobot() {
 const [input, setInput] = useState("");
 const [selectedPrompt, setSelectedPrompt] = useState("");
 
-const API_BASE_URL = "https://johnshaj-portfolio-5.onrender.com";
 
 
   const handleRobotClick = () => {
@@ -37,7 +36,7 @@ const API_BASE_URL = "https://johnshaj-portfolio-5.onrender.com";
   setIsListening(true);
 
   try {
-    const res = await fetch(`${API_BASE_URL}/chat`, {
+    const res = await fetch("https://johnshaj-portfolio-5.onrender.com/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
