@@ -18,7 +18,7 @@ export default function LouRobot() {
 };
 const [input, setInput] = useState("");
 const [selectedPrompt, setSelectedPrompt] = useState("");
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+const API_BASE_URL = "https://johnshaj-portfolio-5.onrender.com";
 
 
 
