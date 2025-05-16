@@ -18,6 +18,7 @@ export default function LouRobot() {
 };
 const [input, setInput] = useState("");
 const [selectedPrompt, setSelectedPrompt] = useState("");
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 
 
@@ -37,7 +38,7 @@ const [selectedPrompt, setSelectedPrompt] = useState("");
   setIsListening(true);
 
   try {
-    const res = await fetch("http://localhost:5000/chat", {
+    const res = await fetch(`${API_BASE_URL}/chat`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
