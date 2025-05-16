@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-const API_BASE_URL = "https://johnshaj-portfolio-5.onrender.com";
+
 
 const ContactPage = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -16,7 +16,7 @@ const ContactPage = () => {
     };
 
     try {
-      const res = await fetch(`${API_BASE_URL}/contact`, {
+      const res = await fetch("https://johnshaj-portfolio-5.onrender.com/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
