@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 const ContactPage = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -15,7 +16,7 @@ const ContactPage = () => {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/contact", {
+      const res = await fetch(`${API_BASE_URL}/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
