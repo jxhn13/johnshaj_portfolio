@@ -46,7 +46,7 @@ const AboutPage = () => {
         </p>
       </div>
       <div style={styles.downloadSection}>
-  <a href="public\john13.pdf" download style={styles.downloadButton}>
+  <a href="/john13.pdf" download style={styles.downloadButton}>
     📄 Download Resume
   </a>
 </div>
